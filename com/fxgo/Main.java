@@ -3,6 +3,10 @@ package com.fxgo;
 public class Main {
 
     public static void main(String[] args) {
+        Animals animalobject = new Animals();
+        animalobject.animalSound();
+
+
         // write your code here
         System.out.println("Index\tCounter");
         int[] score = {30, 50, 70, 89, 97, 57, 32, 59, 431, 467, 876, 543, 90};
