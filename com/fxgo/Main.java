@@ -3,9 +3,6 @@ package com.fxgo;
 public class Main {
 
     public static void main(String[] args) {
-        Animals animalobject = new Animals();
-        animalobject.animalSound();
-
 
         // write your code here
         System.out.println("Index\tCounter");
