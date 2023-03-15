@@ -1,58 +1,37 @@
 package com.fxgo;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        // write your code here
-        System.out.println("Index\tCounter");
-        int[] score = {30, 50, 70, 89, 97, 57, 32, 59, 431, 467, 876, 543, 90};
+        Scanner scanner = new Scanner(System.in);
 
-        // printing array objects against their index in a table
-        for (int i = 0;i<score.length;i++){
-            System.out.println(i + "\t"+"\t" + score[i]);
+        double principal;
+        double rate;
 
-        }
+        System.out.println();
+        System.out.println("///////lets calculate your simple interest/////");
+        System.out.println();
 
-        // adding and printing the sum of all array objects
-        int sum = 0;
+        System.out.println("Please input the amount to lend in UGX");
+        principal = Integer.parseInt(scanner.nextLine());
 
-        for (int counter = 0;counter<score.length;counter++){
-            sum += score[counter];
+        System.out.println("Please input your rate per month");
+        rate = Integer.parseInt(scanner.nextLine());
 
-        }
-        System.out.println("The sum of all the numbers is " + sum);
+        double rateCalPerMonth = rate / 100;
+        double rateCalPerDay = (rateCalPerMonth) / 30;
+        double rateCalPerWeek = (rateCalPerDay) * 7;
+        double rateCalPerYear = (rateCalPerMonth) * 12;
 
-        // multiplying and printing the sum of all array objects
-        int mult = 1;
-
-        for (int counterMult = 0;counterMult<score.length;counterMult++){
-            mult *= score[counterMult];
-
-        }
-        System.out.println("The sum of all the numbers is " + mult);
-
-        //new change array list by adding 5, you can multiply or devide through by 5
-
-        int[] score2 = {32, 59, 431, 467, 876, 543, 90};
-        change(score2);
-
-        for (int w:score2){
-            System.out.println(w);
-
-        }
+        System.out.println("simple interest paid per day: " + "sh:" + principal * rateCalPerDay);
+        System.out.println("simple interest paid per Week: " + "sh:" + principal * rateCalPerWeek);
+        System.out.println("simple interest paid per Month: " + "sh:" + principal * rateCalPerMonth);
+        System.out.println("simple interest paid per Year: " + "sh:" + principal * rateCalPerYear);
 
     }
-
-    public static void change(int x[]){
-        for (int counter=0;counter< x.length;counter++){
-            x[counter]+=5;
-        }
-
-
-    }
-
-
 
 }
 
