@@ -3,7 +3,7 @@ package com.fxgo;
 import java.util.Scanner;
 
 public class VatCalculator {
-    public static void mainvat() {
+    public void myVat() {
         final double VAT_CHARGE = 0.18; // 18% VAT rate in uganda
         Scanner input = new Scanner(System.in);
 
