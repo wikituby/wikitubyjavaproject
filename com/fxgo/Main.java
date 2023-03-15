@@ -38,9 +38,6 @@ public class Main {
         System.out.println("simple interest paid per Week: " + "sh:" + principal * rateCalPerWeek);
         System.out.println("simple interest paid per Month: " + "sh:" + principal * rateCalPerMonth);
         System.out.println("simple interest paid per Year: " + "sh:" + principal * rateCalPerYear);
-
-
-
     }
 
     public static void nssf() {
