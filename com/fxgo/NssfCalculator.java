@@ -6,7 +6,7 @@ public class NssfCalculator {
     public void myNssf() {
 
         System.out.println();
-        System.out.println("///////lets calculate the nssf contribution in uganda/////");
+        System.out.println("NSSF calculator");
         System.out.println();
 
         final double nssfCHARGE = 0.05; // 5% nssf contribution in uganda
