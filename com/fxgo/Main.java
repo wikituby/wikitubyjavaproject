@@ -13,7 +13,7 @@ public class Main {
         System.out.println("1.Calculate VAT\n2.Calculate NSSF\n3.Calculate Loan");
         simpleCal = Integer.parseInt(scanner.nextLine());
 
-        if (simpleCal == 1){
+        if (simpleCal==1){
             //vat calculator
             VatCalculator vatobj = new VatCalculator();
             vatobj.myVat();
